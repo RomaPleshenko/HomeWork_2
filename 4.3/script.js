@@ -1,18 +1,19 @@
-
 let date = prompt('Год рождения');
 if (date === null) {
-    alert("");
-} else {
-    let city = prompt('Где вы родились? ');
-    if (city === null) {
-        alert("Жалко что вы не захотели ввести свой город");
-    } else {
-        let likeSport = prompt('Ваш любимый спорт?');
-        if (likeSportport === null) {
-            alert("Жалко что вы не захотели ввести свой любимый спорт");
-        } else {
-            let currentYear= new Date().getFullYear();
+    alert("Жалко что вы не захотели ввести свой год рождения");
+    date =new Date().getFullYear();
+}
+let currentYear= new Date().getFullYear();
 let age =currentYear-date;
+
+let city = prompt('Где вы родились? ');
+if (city === null) {
+        alert("Жалко что вы не захотели ввести свой город");
+    }
+let likeSport = prompt('Ваш любимый спорт?');
+        if (likeSport === null) {
+            alert("Жалко что вы не захотели ввести свой любимый спорт");
+        }
 let cityMessage ='';
 if (city){
     city = city.toLocaleLowerCase();
@@ -51,9 +52,9 @@ if (likeSport){
     }
 
 }
-alert(`Тебе ${age}\n${cityMessage}\n${sportMassage}`)
-        }
-    }
-}
+alert(`Тебе ${age} лет\n${cityMessage}\n${sportMassage}`)
+
+
+
 
 
